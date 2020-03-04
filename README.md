@@ -1,20 +1,21 @@
-# Difference Of Squares
+# Space Age
 
-Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.
+Given an age in seconds, calculate how old someone would be on:
 
-The square of the sum of the first ten natural numbers is
-(1 + 2 + ... + 10)² = 55² = 3025.
+   - Earth: orbital period 365.25 Earth days, or 31557600 seconds
+   - Mercury: orbital period 0.2408467 Earth years
+   - Venus: orbital period 0.61519726 Earth years
+   - Mars: orbital period 1.8808158 Earth years
+   - Jupiter: orbital period 11.862615 Earth years
+   - Saturn: orbital period 29.447498 Earth years
+   - Uranus: orbital period 84.016846 Earth years
+   - Neptune: orbital period 164.79132 Earth years
 
-The sum of the squares of the first ten natural numbers is
-1² + 2² + ... + 10² = 385.
+So if you were told someone were 1,000,000,000 seconds old, you should
+be able to say that they're 31.69 Earth-years old.
 
-Hence the difference between the square of the sum of the first
-ten natural numbers and the sum of the squares of the first ten
-natural numbers is 3025 - 385 = 2640.
-
-You are not expected to discover an efficient solution to this yourself from
-first principles; research is allowed, indeed, encouraged. Finding the best
-algorithm for the problem is a key skill in software engineering.
+If you're wondering why Pluto didn't make the cut, go watch [this
+youtube video](http://www.youtube.com/watch?v=Z_2gbGXzFbs).
 
 ## Running tests
 
@@ -41,7 +42,7 @@ environment expected by the exercises.
 
 ## Source
 
-Problem 6 at Project Euler [http://projecteuler.net/problem=6](http://projecteuler.net/problem=6)
+Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=01](http://pine.fm/LearnToProgram/?Chapter=01)
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
