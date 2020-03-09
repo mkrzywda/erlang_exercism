@@ -3,8 +3,14 @@
 -export([difference_of_squares/1, square_of_sum/1, sum_of_squares/1]).
 
 
-difference_of_squares(_Number) -> undefined.
+-spec difference_of_squares(integer()) -> integer().
+difference_of_squares(Number) -> square_of_sum(Number) - sum_of_squares(Number).
 
-square_of_sum(_Number) -> undefined.
+-spec square_of_sum(integer()) -> integer().
+square_of_sum(Number) -> square( lists:sum(lists:seq(1, Number))).
 
-sum_of_squares(_Number) -> undefined.
+-spec sum_of_squares(integer()) -> integer().
+sum_of_squares(Number) -> lists:sum( [square(X) || X <- lists:seq(1, Number)] ).
+
+-spec square(integer()) -> integer().
+square(Number) -> erlang:trunc( math:pow(Number, 2) ).
